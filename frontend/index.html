@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras</title>
+    <style>
+        body { 
+            font-family: sans-serif; 
+            max-width: 1200px; 
+            margin: 0 auto; 
+            padding: 20px; 
+            background-color: #f4f4f4; 
+        }
+        h1 { 
+    text-align: center;  
+    margin-bottom: 30px; 
+}
+        .container { 
+            display: flex; 
+            gap: 20px; 
+            align-items: flex-start;  
+        }
+        
+        .products { 
+            background: rgb(255, 255, 255); 
+            padding: 20px; 
+            border-radius: 8px; 
+            flex: 0 0 60%;  
+            box-shadow: 5px 5px 5px 5px rgb(80, 80, 80); 
+            max-height: 80vh;  
+            overflow-y: auto;  
+        }
+        
+        .cart-section { 
+            background: rgb(255, 255, 255); 
+            padding: 20px; 
+            border-radius: 8px; 
+            flex: 0 0 35%;  
+            box-shadow: 5px 5px 5px 5px rgb(80, 80, 80); 
+            max-height: 80vh; 
+            overflow-y: auto; 
+        }
+        
+        .product-item { 
+            border-bottom: 1px solid #eee; 
+            padding: 10px 0; 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+        }
+        
+        button { 
+            background-color: #28a745; 
+            color: white; 
+            border: none; 
+            padding: 8px 15px; 
+            cursor: pointer; 
+            border-radius: 4px; 
+        }
+        
+        button:hover { 
+            background-color: #218838; 
+        }
+        
+        button.remove { 
+            background-color: #dc3545; 
+        }
+        
+        .payment-row { 
+            display: flex; 
+            gap: 10px; 
+            margin-bottom: 10px; 
+            align-items: center; 
+        }
+        
+        input, select { 
+            padding: 8px; 
+            border: 1px solid #ddd; 
+            border-radius: 4px; 
+        }
+        
+        #total-display { 
+            font-size: 1.2em; 
+            font-weight: bold; 
+            margin: 15px 0; 
+        }
+        
+        .hidden { 
+            display: none; 
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Loja</h1>
+
+    <div class="container">
+        
+        <div class="products">
+            <h2>Produtos Disponíveis</h2>
+            <div id="product-list">Carregando...</div>
+        </div>
+
+        
+        <div class="cart-section">
+            <h2>Seu Carrinho</h2>
+            <div id="cart-items">Seu carrinho está vazio.</div>
+            
+            <div id="checkout-area" class="hidden">
+                <hr>
+                <div id="total-display">Total: R$ 0,00</div>
+                
+                <label>Data de Entrega:</label><br>
+                <input type="date" id="delivery-date" required><br><br>
+
+                <h3>Pagamento</h3>
+                <div id="payments-container"></div>
+                <button type="button" onclick="addPaymentField()" style="background-color: #007bff; margin-bottom: 10px;">+ Adicionar Pagamento</button>
+
+                <button onclick="finalizeOrder()" style="width: 100%; font-size: 1.1em; padding: 15px;">Finalizar Compra</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

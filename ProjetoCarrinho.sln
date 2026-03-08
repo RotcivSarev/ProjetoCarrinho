@@ -1,0 +1,32 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ProjetoCarrinho", "ProjetoCarrinho", "{55262774-D902-CBF3-3C1F-BB651AF8CB58}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "backend", "backend", "{4272B92A-3183-59E8-AB7C-1540EB9E26EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShoppingCartApi", "backend\ShoppingCartApi\ShoppingCartApi.csproj", "{99ACA749-9C62-C8F9-4966-94002A618312}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{99ACA749-9C62-C8F9-4966-94002A618312}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99ACA749-9C62-C8F9-4966-94002A618312}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99ACA749-9C62-C8F9-4966-94002A618312}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99ACA749-9C62-C8F9-4966-94002A618312}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4272B92A-3183-59E8-AB7C-1540EB9E26EF} = {55262774-D902-CBF3-3C1F-BB651AF8CB58}
+		{99ACA749-9C62-C8F9-4966-94002A618312} = {4272B92A-3183-59E8-AB7C-1540EB9E26EF}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5B01AA3B-E3B9-477B-9613-1F61D32F8215}
+	EndGlobalSection
+EndGlobal
