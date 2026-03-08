@@ -1,21 +1,21 @@
+Pré-requisitos
+
+baixar .NET 10 SDK em https://dotnet.microsoft.com/pt-br/download/dotnet/10.0?spm=a2ty_o01.29997173.0.0.79f451715YOAGR&file=10.0
+Um navegador web moderno (Chrome, Firefox, Edge)
+
 Como executar o projeto
 1. Clonar o repositório:
-
-git clone https://github.com/seu-usuario/seu-repositorio.git
-
-2. Entrar na pasta da API:
+git clone https://github.com/RotcivSarev/ProjetoCarrinho.git
+cd ProjetoCarrinho
+2.
+# Entrar na pasta da API
 cd backend/ShoppingCartApi
 
-3. Restaurar dependências:
+# Restaurar dependências
 dotnet restore
 
-4. Criar o banco de dados:
-dotnet ef migrations add InitialCreate
-
-dotnet ef database update
-
-6. Rodar a API:
-
+# Executar a API
 dotnet run
 
-A API ficará disponível em: http://127.0.0.1:5500/ProjetoCarrinho/frontend/index.html
+3.Abrir o frontend
+Apenas abra o arquivo index.html diretamente no gerenciador de arquivos ou utilizar o Live Server
