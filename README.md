@@ -12,7 +12,7 @@ git clone https://github.com/RotcivSarev/ProjetoCarrinho.git
 
 cd ProjetoCarrinho
 
- 2.Entrar na pasta da API:
+ 2. Entrar na pasta da API:
 
 cd backend/ShoppingCartApi
 
@@ -24,6 +24,6 @@ dotnet restore
 
 dotnet run
 
- 5.Abrir o frontend
+ 5. Abrir o frontend
 
 Apenas abra o arquivo index.html diretamente no gerenciador de arquivos ou utilizar o Live Server
