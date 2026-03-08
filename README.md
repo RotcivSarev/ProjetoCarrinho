@@ -1,19 +1,20 @@
 Como executar o projeto
-1. Clonar o repositório
+1. Clonar o repositório:
 
 git clone https://github.com/seu-usuario/seu-repositorio.git
 
-2. Entrar na pasta da API
+2. Entrar na pasta da API:
 cd backend/ShoppingCartApi
 
-3. Restaurar dependências
+3. Restaurar dependências:
 dotnet restore
 
-4. Criar o banco de dados 
+4. Criar o banco de dados:
 dotnet ef migrations add InitialCreate
+
 dotnet ef database update
 
-5. Rodar a API
+6. Rodar a API:
 
 dotnet run
 
