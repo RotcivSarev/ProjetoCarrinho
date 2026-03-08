@@ -20,10 +20,10 @@ cd backend/ShoppingCartApi
 
 dotnet restore
 
- 4. Executar a API
+ 4. Executar a API:
 
 dotnet run
 
- 5. Abrir o frontend
+ 5. Abrir o frontend:
 
 Apenas abra o arquivo index.html diretamente no gerenciador de arquivos ou utilizar o Live Server
