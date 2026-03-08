@@ -6,24 +6,24 @@ Um navegador web moderno (Chrome, Firefox, Edge)
 
 #Como executar o projeto
 
-1. Clonar o repositório:
+ 1. Clonar o repositório:
 
 git clone https://github.com/RotcivSarev/ProjetoCarrinho.git
 
 cd ProjetoCarrinho
 
-2.Entrar na pasta da API:
+ 2.Entrar na pasta da API:
 
 cd backend/ShoppingCartApi
 
-3. Restaurar dependências:
+ 3. Restaurar dependências:
 
 dotnet restore
 
-4. Executar a API
+ 4. Executar a API
 
 dotnet run
 
-5.Abrir o frontend
+ 5.Abrir o frontend
 
 Apenas abra o arquivo index.html diretamente no gerenciador de arquivos ou utilizar o Live Server
